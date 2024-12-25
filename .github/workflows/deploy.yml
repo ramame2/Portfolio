@@ -3,21 +3,34 @@ name: Deploy to InfinityFree
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch (or change this if you're using a different branch)
+      - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Upload files to InfinityFree
+      - name: Set Git Config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: mbstring, pdo_mysql
+
+      - name: Install Dependencies
+        run: composer install
+
+      - name: Deploy to InfinityFree
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          ftp-server: 'ftpupload.net'  # Replace with your InfinityFree FTP server
-          ftp-username: ${{ secrets.FTP_USERNAME }}  # Replace with your FTP username
-          ftp-password: ${{ secrets.FTP_PASSWORD }}  # Replace with your FTP password
-          local-dir: './'  # Path to your local website files
-          remote-dir: '/htdocs'  # Path on the server (you can change this as per your needs)
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /htdocs/
