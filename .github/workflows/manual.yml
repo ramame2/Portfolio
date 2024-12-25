@@ -1,0 +1,24 @@
+name: Deploy to InfinityFree
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch (or change this if you're using a different branch)
+    workflow_dispatch:  # Allows manual trigger via GitHub interface
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Upload files to InfinityFree
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          ftp-server: 'ftpupload.net'  # Replace with your InfinityFree FTP server
+          ftp-username: ${{ secrets.FTP_USERNAME }}  # Replace with your FTP username
+          ftp-password: ${{ secrets.FTP_PASSWORD }}  # Replace with your FTP password
+          local-dir: './'  # Path to your local website files
+          remote-dir: '/htdocs'  # Path on the server (you can change this as per your needs)
