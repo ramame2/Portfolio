@@ -14,7 +14,7 @@
                 setTimeout(displayNextLetter, 200);
             } else {
                 setTimeout(() => {
-                    textContainer.innerHTML = " ";
+                    textContainer.innerHTML = "";
                     index = 0;
                     displayNextLetter();
                 }, 2000);

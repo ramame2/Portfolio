@@ -443,7 +443,7 @@ body {
 .containerproject {
     width: 90%;
     max-width: 720px;
-    margin: 1rem auto;
+    margin: 2rem auto;
     padding: 2rem;
     background-color: rgba(250, 8, 220, 0.19);
     box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
@@ -620,6 +620,12 @@ body {
 
 /* Responsive design voor mobiele apparaten */
 @media (max-width: 768px) {
+    #text-container{
+        align-self: center;
+        color: rgba(87, 39, 136, 0.93);
+        font-size: 1rem;
+        font-family: Cambria, serif;
+    }
     .container {
         padding: 1.5rem;
     }
@@ -686,9 +692,9 @@ body {
 
      .collapse-button {
         position: fixed;
-        top: 30px;
+        top: 1.1rem;
         right: 1rem;
-        background-color: #fbf9f9;
+        background-color: rgba(251, 249, 249, 0.5);
         color: #0f3efb;
         font-size: 15px;
         padding: 10px 12px;
@@ -749,14 +755,22 @@ body {
     .containerproject {
         width: 70%;
         max-width: 720px;
-        margin: 0 auto;
+        margin: 2rem auto;
+        margin-top: 2rem;
         padding: 2rem;
         background-color: rgba(250, 8, 220, 0.19); /* Licht beige achtergrondkleur */
         box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
         border-radius: 18px;
         border: 1px solid #0c0a0a;
     }
-
+    .containerproject h2 {
+        text-align: center;
+        margin: 0;
+        color: #131313; /* Donkerblauwe kleur voor de titel */
+        margin-bottom: 1rem;
+        font-family: Cambria, serif;
+        font-size: 1.5rem;
+    }
     .project-buttons,
     .project-info-buttons {
         display: flex;
@@ -780,6 +794,42 @@ body {
         text-wrap: wrap;
         transition: transform 0.4s ease; /* Voeg een overgangseffect toe */
     }
+    /* Over Mij Pagina Stijlen */
+        .about-section {
+            flex-direction: column; /* Stacks the sections vertically on mobile */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-div, .right-div {
+            width: 90%; /* Make both divs take up 90% of the screen */
+            height: auto; /* Adjust height based on content */
+            padding: 15px; /* Reduce padding on mobile */
+        }
+
+        .right-div img {
+            height: auto; /* Adjust image height for better scaling */
+            margin-top: 0; /* Remove the negative margin */
+        }
+
+        .tab-button {
+            font-size: 1.5rem; /* Reduce font size of the buttons */
+            padding: 12px; /* Adjust padding for buttons */
+        }
+
+        .popup-content {
+            width: 80%; /* Make the popup content take up more space on small screens */
+            height: auto; /* Adjust height */
+        }
+
+        .naam {
+            font-size: 1.8rem; /* Scale down the name font size for smaller screens */
+        }
+
+        .container2 {
+            width: 90%; /* Adjust container width on mobile */
+            height: auto; /* Adjust height on mobile */
+        }
 
 }
 
