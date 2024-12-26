@@ -34,7 +34,7 @@
             <div id="studies" class="description-text">Ik heb biologie en biotechnologie gestudeerd aan de Universiteit van Aleppo in mijn land.<br>
                 Daarna heb ik twee jaar informatietechnologie gevolgd, maar door de oorlog kon ik deze opleiding niet afronden.<br>
                 Momenteel studeer ik AD Software Development aan Hogeschool Windesheim.</div>
-            <div id="work" class="description-text">Ik heb drie jaar als tandartsassistente gewerkt in mijn land en een jaar stage gelopen in Nederland om mijn taalvaardigheid te verbeteren.Ik heb drie jaar als tandartsassistente gewerkt in mijn land en een jaar stage gelopen in Nederland om mijn taalvaardigheid te verbeteren.</div>
+            <div id="work" class="description-text">Ik heb drie jaar als tandartsassistente gewerkt in mijn land en een jaar stage gelopen in Nederland om mijn taalvaardigheid te verbeteren..</div>
             <div id="hobbies" class="description-text">Ik hou van sporten, tekenen, koken, en films kijken.</div>
         </div>
     </div>
