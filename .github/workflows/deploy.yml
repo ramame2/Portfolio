@@ -29,4 +29,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: rama.html-5.me/htdocs/
- debug: true 
+          debug: true 
