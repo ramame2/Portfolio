@@ -214,6 +214,53 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* Star element style */
+.star {
+    position: absolute;
+    width: 20px; /* Increased star size */
+    height: 20px; /* Increased star size */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Star shape */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 215, 0, 0.6)); /* Default yellow color */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7); /* Glowing effect */
+    animation: starAnimation 1.5s infinite alternate;
+    pointer-events: none; /* Prevent stars from interfering with clicks */
+}
+
+/* Randomly change colors of stars */
+@keyframes starAnimation {
+    0% {
+        transform: scale(0.8) translateY(0);
+        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.7); /* Yellow-red glow */
+        background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 0, 0, 0.6));
+    }
+    25% {
+        transform: scale(1) translateY(-10px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 15px rgba(0, 0, 255, 0.7); /* Cyan-blue glow */
+        background: radial-gradient(circle, rgba(0, 255, 255, 0.8), rgba(0, 0, 255, 0.6));
+    }
+    50% {
+        transform: scale(1.2) translateY(-15px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(85, 255, 0, 0.8), 0 0 15px rgba(255, 140, 0, 0.6); /* Orange-red glow */
+        background: radial-gradient(circle, rgba(123, 255, 0, 0.8), rgba(64, 255, 0, 0.6));
+    }
+    75% {
+        transform: scale(1) translateY(-10px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 15px rgba(128, 0, 128, 0.7); /* Pink-purple glow */
+        background: radial-gradient(circle, rgba(255, 0, 255, 0.8), rgba(128, 0, 128, 0.6));
+    }
+    100% {
+        transform: scale(0.8) translateY(0);
+        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7); /* Yellow-red glow */
+        background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 69, 0, 0.6));
+    }
+}
+
 /* Algemene stijlen voor het contactformulier */
 .container {
     width: 70%;

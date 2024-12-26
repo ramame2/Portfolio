@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+<script src="../js/Stars.js"></script>
 <?php include 'header.php'; ?>
 <div class="containerr">
 
@@ -30,9 +31,11 @@
         </ul>
     </div>
 </div>
+
     <br><br><br><br>
 </body>
 
     <?php include 'footer.php'; ?>
+
 
 </html>
