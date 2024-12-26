@@ -12,6 +12,7 @@ h1 {
 }
 #text-container{
 align-self: center;
+    margin-top: -8rem;
     color: rgba(87, 39, 136, 0.93);
     font-size: 1.5rem;
     font-family: Cambria, serif;
@@ -30,6 +31,15 @@ header {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
+    font-family: Cambria, serif;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 /*zoeken veld & button*/
 
@@ -155,54 +165,49 @@ button:hover {
     background-color: rgba(251, 23, 232, 0.38);
     color: #ffffff;
 }
-.collapse-button {
-    position: fixed;
-    top: 1rem;
-    right: 7rem;
-    background-color: rgba(108, 102, 102, 0.15);
-    color: #061ef6;
-    font-size: 18px;
-    padding: 10px 12px;
-    border: #071c1c solid;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 28px;
-    transition: background-color 0.3s ease;;
-}
-.collapse-button:hover {
-    background-color: rgba(236, 5, 217, 0.56);
-}
+@media(min-width: 782px) {
+    .collapse-button {
+        display: none;
+    }
+        .menuheader {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            right: 1rem;
+            margin: 1rem 8rem 0 -2rem;
+            background-color: transparent;
+            position: absolute;
+            border: none;
+            width: 8rem;
+            height: 2rem;
+            text-wrap: nowrap;
+            box-shadow: none;
+        }
 
-.items {
-    display: none;
-    background-color: rgba(108, 102, 102, 0.58);
-    position: fixed;
-    top: 85px;
-    right: 62px;
-    border: 1px solid rgba(221, 221, 221, 0.27);
-    border-radius: 8px;
-    width: 165px;
-    height: 165px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    overflow: hidden;
-}
+        .items {
+            display: flex;
+            align-self: start;
+            justify-content: left;
+            gap: 1.5rem;
+            background-color: transparent;
+            position: static;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            color: #000;
+            
+        }
+    .items a {
 
-.items a {
-    display: block;
-    padding: 13px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: rgb(251, 249, 249);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-weight: 500;
-}
+        text-decoration: none;
+    }
+        .items :hover {
+            background-color: rgba(92, 116, 205, 0.75);
+            color: #777554;
+        }
+    }
 
-
-.items a:hover {
-    background-color: rgba(92, 116, 205, 0.75);
-    color: #777554;
-}
 body {
     background-image: url("/ii.jpg");
     background-repeat: repeat;
@@ -667,11 +672,21 @@ body {
 
 /* Responsive design voor mobiele apparaten */
 @media (max-width: 768px) {
+
     #text-container{
         align-self: center;
+        margin-top: -2rem;
         color: rgba(87, 39, 136, 0.93);
         font-size: 1rem;
         font-family: Cambria, serif;
+    }
+    .logo {
+        width: 120px;
+        height: 120px;
+        margin-top: -1.5rem;
+        margin-left: -1.3rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
     }
     .container {
         width: 70%;
@@ -746,7 +761,7 @@ body {
 
      .collapse-button {
         position: fixed;
-        top: 1.1rem;
+        top: 0.8rem;
         right: 1rem;
         background-color: rgba(251, 249, 249, 0.5);
         color: #0f3efb;
@@ -772,6 +787,18 @@ body {
         z-index: 99;
         overflow: hidden;
     }
+
+    .items a {
+        display: block;
+        padding: 13px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: rgb(251, 249, 249);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-weight: 500;
+    }
+
+
     h1{
         justify-items: center;
         margin-top: 0.5rem;

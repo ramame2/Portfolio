@@ -1,5 +1,5 @@
 <header>
-
+    <img src="/logo.png" alt="My Logo"  class="logo">
     <div id="text-container"></div>
 
     <script>
@@ -24,14 +24,14 @@
     </script>
     <script src="../js/fav.js"></script>
 
-    <button class="collapse-button" onclick="toggleMenu()">☰</button>
-
-    <div class="items" id="menuItems">
-        <a class="projecten2" href="../views/projecten.php" target="_self">📚 Projecten</a>
-        <a class="over2" href="../views/about.php" target="_self">️📑 Over mij</a>
-        <a class="contact2" href="../views/contact.php" target="_self">📨 Contact</a>
+    <div class="menuheader">
+        <div class="items" id="menuItems">
+            <a class="projecten2" href="../views/projecten.php" target="_self">📚 Projecten</a>
+            <a class="over2" href="../views/about.php" target="_self">️📑 Over mij</a>
+            <a class="contact2" href="../views/contact.php" target="_self">📨 Contact</a>
+        </div>
+        <button class="collapse-button" onclick="toggleMenu()">☰</button>
     </div>
-
     <script>
         function toggleMenu() {
             const menuItems = document.getElementById("menuItems");
