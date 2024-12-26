@@ -102,21 +102,21 @@ header {
 
 .footer p {
     font-size: 20px;
-    margin: 5px 0;
+    margin: 0 0.5rem;
     color: #0c0a0a;
     font-family: Cambria, serif;
-    margin-right: 2rem;
     font-weight: normal;
 }
 
 .footer .home-link {
-    display: inline-block;
+    justify-items: center;
     color: #fbf9f9;
     margin-top: -5px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     padding: 10px 15px;
     border-radius: 9px;
+    border: #0a84fd solid 1px;
     background-color: rgba(196, 47, 255, 0.21);
     transition: background-color 0.8s ease;
 }
@@ -169,7 +169,7 @@ button:hover {
     border-radius: 28px;
     transition: background-color 0.3s ease;;
 }
-collapse-button:hover {
+.collapse-button:hover {
     background-color: rgba(236, 5, 217, 0.56);
 }
 
@@ -715,9 +715,10 @@ body {
         color: #fbf9f9;
         margin-top: -5px;
         text-decoration: none;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         padding: 10px 15px;
         border-radius: 9px;
+        border: #0a84fd solid 1px;
         background-color: rgba(196, 47, 255, 0.21);
         transition: background-color 0.8s ease;
     }
@@ -725,7 +726,7 @@ body {
 
     .footer .sociaal {
         display: flex;
-        gap: 2%;
+        gap: 0.3rem;
         margin-top: 1px;
     }
 
@@ -738,10 +739,9 @@ body {
     }
     .footer p {
     font-size: 10px;
-    margin: 5px 0;
+    margin: 0 0.3rem;
     color: #0c0a0a;
     font-family: Cambria, serif;
-    margin-right: 2rem;
     }
 
      .collapse-button {
@@ -810,7 +810,6 @@ body {
         width: 70%;
         max-width: 720px;
         margin: 2rem auto;
-        margin-top: 2rem;
         padding: 2rem;
         background-color: rgba(250, 8, 220, 0.19); /* Licht beige achtergrondkleur */
         box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);

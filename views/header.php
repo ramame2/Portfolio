@@ -22,6 +22,7 @@
         }
         displayNextLetter();
     </script>
+    <script src="../js/fav.js"></script>
 
     <button class="collapse-button" onclick="toggleMenu()">☰</button>
 
