@@ -14,11 +14,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@latst
         with:
           server: 'ftpupload.net'  # InfinityFree's FTP server
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: rama.html-5.me/htdocs/
+          server-dir: rama.10001mb.com/htdocs/
           debug: true 
