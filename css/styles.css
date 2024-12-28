@@ -12,7 +12,7 @@ h1 {
 }
 #text-container{
 align-self: center;
-    margin-top: -8rem;
+    margin-top: -4rem;
     color: rgba(87, 39, 136, 0.93);
     font-size: 1.5rem;
     font-family: Cambria, serif;
@@ -220,16 +220,16 @@ body {
     min-height: 100vh;
 }
 
-/* Star element style */
+/* Star style */
 .star {
     position: absolute;
-    width: 20px; /* Increased star size */
-    height: 20px; /* Increased star size */
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Star shape */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 215, 0, 0.6)); /* Default yellow color */
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7); /* Glowing effect */
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 215, 0, 0.6));
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7);
     animation: starAnimation 1.5s infinite alternate;
-    pointer-events: none; /* Prevent stars from interfering with clicks */
+    pointer-events: none;
 }
 
 /* Randomly change colors of stars */
@@ -243,7 +243,7 @@ body {
     25% {
         transform: scale(1) translateY(-10px);
         opacity: 1;
-        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 15px rgba(0, 0, 255, 0.7); /* Cyan-blue glow */
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 15px rgba(0, 0, 255, 0.7);
         background: radial-gradient(circle, rgba(0, 255, 255, 0.8), rgba(0, 0, 255, 0.6));
     }
     50% {
@@ -255,13 +255,13 @@ body {
     75% {
         transform: scale(1) translateY(-10px);
         opacity: 1;
-        box-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 15px rgba(128, 0, 128, 0.7); /* Pink-purple glow */
+        box-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 15px rgba(128, 0, 128, 0.7);
         background: radial-gradient(circle, rgba(255, 0, 255, 0.8), rgba(128, 0, 128, 0.6));
     }
     100% {
         transform: scale(0.8) translateY(0);
         opacity: 0.8;
-        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7); /* Yellow-red glow */
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7);
         background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 69, 0, 0.6));
     }
 }
@@ -272,7 +272,7 @@ body {
     max-width: 620px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: rgba(250, 8, 220, 0.19); /* Licht beige achtergrondkleur */
+    background-color: rgba(250, 8, 220, 0.19);
     box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
     border-radius: 18px;
     border: 1px solid #0c0a0a;
@@ -280,7 +280,7 @@ body {
 .container h2 {
     text-align: center;
     margin: 0;
-    color: #131313; /* Donkerblauwe kleur voor de titel */
+    color: #131313;
     margin-bottom: 1rem;
     font-family: Cambria, serif;
     font-size: 2.5rem;
@@ -296,7 +296,7 @@ body {
 
 .contact h3, .contact h4, .contact h5 {
     margin: 0;
-    color: #0c0c0c; /* Grijze kleur voor de subtitels */
+    color: #0c0c0c;
     font-family: Cambria, serif;
     font-size: 1.5rem;
 }
@@ -314,7 +314,7 @@ body {
 }
 
 .contact input:focus, .contact textarea:focus {
-    border-color: #3f72a5; /* Donkerblauwe kleur voor de focus */
+    border-color: #3f72a5;
     outline: none;
 }
 
@@ -340,13 +340,25 @@ body {
 }
 
 /*cv download-link $ location*/
+#download-cv {
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#download-cv a {
+    text-decoration: none;
+    color: #0e0e0d;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
 
 .cv-map-row {
     display: flex;
-    justify-content: center; /* Zet de inhoud in het midden */
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 40px; /* Voeg een kleine gap toe tussen de secties */
+    gap: 40px;
 }
 
 .download-link, .nav-link {
@@ -372,35 +384,36 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 3rem;
 }
 
 .left-div {
-    width: 55%; /* Vergroot de breedte van de linker div */
-    padding: 20px; /* Voeg wat padding toe voor een betere uitstraling */
-    height: 500px; /* Verhoog de hoogte */
+    width: 55%;
+    padding: 20px;
+    height: 55%;
 
 }
 
 .right-div {
-    width: 45%; /* Vergroot de breedte van de rechter div */
+    width: 40%;
     text-align: center;
-    padding: 20px; /* Voeg wat padding toe voor een betere uitstraling */
-    height: 450px; /* Verhoog de hoogte */
+    padding: 20px;
+    height: 40%;
 }
 
 .right-div img {
-    width: 100%;
-    height: 70%; /* Voeg hoogte toe om de div volledig te vullen */
+    width: 90%;
+    height: 90%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(244, 6, 196); /* Voeg een schaduw toe voor een professionelere look */
-    margin-top: -0.9rem;
+    box-shadow: 0 4px 8px rgb(244, 6, 196);
+    margin-top: -6rem;
 }
 
 .tab-button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    padding: 15px; /* Verhoog de padding voor grotere knoppen */
+    padding: 15px;
     background-color: rgba(244, 6, 232, 0.33);
     color: #0c0c0c;
     border: none;
@@ -431,15 +444,15 @@ body {
 
 .popup-content {
     background-color: #ece1e1;
-    margin: 5% auto; /* Verlaag de marge voor een betere plaatsing */
-    padding: 30px; /* Verhoog de padding voor meer ruimte */
+    margin: 5% auto;
+    padding: 30px;
     border: 1px solid #888;
-    width: 40%; /* Verklein de breedte voor een nettere uitstraling */
-    max-width: 600px; /* Stel een maximale breedte in */
-    height: 40%; /* Verhoog de hoogte van de pop-up */
-    max-height: 700px; /* Stel een maximale hoogte in */
+    width: 40%;
+    max-width: 600px;
+    height: 40%;
+    max-height: 700px;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgb(13, 86, 99); /* Voeg een schaduw toe voor een professionelere look */
+    box-shadow: 0 5px 15px rgb(13, 86, 99);
 }
 
 .close-button {
@@ -460,10 +473,10 @@ body {
     display: none;
 
 
-    font-size: 1.2rem; /* Verhoog de lettergrootte voor een betere leesbaarheid */
-    line-height: 1.6; /* Verhoog de regelhoogte voor meer ruimte tussen de regels */
-    color: #333; /* Stel de tekstkleur in voor een betere leesbaarheid */
-    animation: slideIn 1.5s ease-out; /* Voeg een slide-in animatie toe */;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    animation: slideIn 1.5s ease-out;
 }
 .naam{
     color: #0e0e0d;
@@ -489,7 +502,7 @@ body {
         opacity: 1;
     }
 }
-/* Projectenpagina Stijlen */
+
 
 
 .containerproject {
@@ -505,7 +518,7 @@ body {
 .containerproject h2 {
     text-align: center;
     margin: 0;
-    color: #131313; /* Donkerblauwe kleur voor de titel */
+    color: #131313;
     margin-bottom: 1rem;
     font-family: Cambria, serif;
     font-size: 2.5rem;
@@ -530,7 +543,7 @@ body {
     position: relative;
     font-size: 1.2rem;
     text-align: center;
-    transition: transform 0.4s ease; /* Voeg een overgangseffect toe */
+    transition: transform 0.4s ease;
 }
 
 .project-button:hover,
@@ -598,7 +611,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #333;
-    display: none; /* Verberg het inhoudsvlak standaard */
+    display: none;
 }
 
 
@@ -670,7 +683,7 @@ body {
     box-shadow: 5px 4px 8px rgba(4, 62, 251, 0.6);
 }
 
-/* Responsive design voor mobiele apparaten */
+
 @media (max-width: 768px) {
 
     #text-container{
@@ -693,7 +706,7 @@ body {
         max-width: 620px;
         margin: 2rem auto;
         padding: 2rem;
-        background-color: rgba(250, 8, 220, 0.19); /* Licht beige achtergrondkleur */
+        background-color: rgba(250, 8, 220, 0.19);
         box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
         border-radius: 18px;
         border: 1px solid #0c0a0a;
@@ -809,12 +822,22 @@ body {
     }
 
 
+    #download-cv {
+        margin-left: 0;
+        width: 92%;
+        margin-top: 20px;
+    }
+    #download-cv a {
+        text-decoration: none;
+        font-size: 1.5rem;
+
+    }
   .cv-map-row {
     display: flex;
-    justify-content: center; /* Zet de inhoud in het midden */
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 40px; /* Voeg een kleine gap toe tussen de secties */
+    gap: 40px;
   }
 
   .download-link, .nav-link {
@@ -830,7 +853,7 @@ body {
     margin-top: 10px;
   }
 
-    /* Projectenpagina Stijlen */
+
 
 
     .containerproject {
@@ -838,7 +861,7 @@ body {
         max-width: 720px;
         margin: 2rem auto;
         padding: 2rem;
-        background-color: rgba(250, 8, 220, 0.19); /* Licht beige achtergrondkleur */
+        background-color: rgba(250, 8, 220, 0.19);
         box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
         border-radius: 18px;
         border: 1px solid #0c0a0a;
@@ -846,7 +869,7 @@ body {
     .containerproject h2 {
         text-align: center;
         margin: 0;
-        color: #131313; /* Donkerblauwe kleur voor de titel */
+        color: #131313;
         margin-bottom: 1rem;
         font-family: Cambria, serif;
         font-size: 1.5rem;
@@ -872,43 +895,44 @@ body {
         font-size: 1rem;
         text-align: center;
         text-wrap: wrap;
-        transition: transform 0.4s ease; /* Voeg een overgangseffect toe */
+        transition: transform 0.4s ease;
     }
     /* Over Mij Pagina Stijlen */
         .about-section {
-            flex-direction: column; /* Stacks the sections vertically on mobile */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
         .left-div, .right-div {
-            width: 90%; /* Make both divs take up 90% of the screen */
-            height: auto; /* Adjust height based on content */
-            padding: 15px; /* Reduce padding on mobile */
+            width: 90%;
+            height: auto;
+            padding: 15px;
         }
 
         .right-div img {
-            height: auto; /* Adjust image height for better scaling */
-            margin-top: 0; /* Remove the negative margin */
+            height: auto;
+            margin-top: 0;
+            margin-bottom: 2rem;
         }
 
         .tab-button {
-            font-size: 1.5rem; /* Reduce font size of the buttons */
-            padding: 12px; /* Adjust padding for buttons */
+            font-size: 1.5rem;
+            padding: 12px;
         }
 
         .popup-content {
-            width: 80%; /* Make the popup content take up more space on small screens */
-            height: auto; /* Adjust height */
+            width: 80%;
+            height: auto;
         }
 
         .naam {
-            font-size: 1.8rem; /* Scale down the name font size for smaller screens */
+            font-size: 1.8rem;
         }
 
         .container2 {
-            width: 90%; /* Adjust container width on mobile */
-            height: auto; /* Adjust height on mobile */
+            width: 90%;
+            height: auto;
         }
 
 }

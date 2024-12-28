@@ -20,11 +20,16 @@
             <button class="tab-button" onclick="showDescription('studies')">Studies</button>
             <button class="tab-button" onclick="showDescription('work')">Werkervaring</button>
             <button class="tab-button" onclick="showDescription('hobbies')">Hobby's</button>
+            <div class="tab-button" id="download-cv">
+                <a href="/public/download_cv.php" >Mijn CV</a>
+            </div>
         </div>
         <div class="right-div">
             <img src="/f.jpg" alt="Mijn Foto">
         </div>
+
     </div>
+
     <div class="description-popup" id="description-popup">
         <div class="popup-content">
             <span class="close-button" onclick="closeDescription()">&times;</span>
