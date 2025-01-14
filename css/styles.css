@@ -1,0 +1,958 @@
+/* Stijlen voor de header */
+h1 {
+    width: 8.8em;
+    height: 5rem;
+    font-size: 3.9rem;
+    text-align: center;
+    color: #0e0e0d;
+    font-family: Cambria, serif;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 7rem;
+}
+#text-container{
+align-self: center;
+    margin-top: -4rem;
+    color: rgba(87, 39, 136, 0.93);
+    font-size: 1.5rem;
+    font-family: Cambria, serif;
+}
+.container1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    font-family: Cambria, serif;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+/*zoeken veld & button*/
+
+.search-form {
+    margin: 20px 0;
+
+}
+
+.search-form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a54f4;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 6px auto;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #2e567a;
+}
+
+/* Stijlen voor de footer */
+
+.footer {
+    position: fixed;
+    height: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(243, 66, 213, 0.38);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer .sociaal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 8px;
+}
+
+.footer .sociaal img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    border-radius: 3rem;
+}
+
+.footer .sociaal img:hover {
+    transform: scale(1.3);
+}
+
+.footer p {
+    font-size: 20px;
+    margin: 0 0.5rem;
+    color: #0c0a0a;
+    font-family: Cambria, serif;
+    font-weight: normal;
+}
+
+.footer .home-link {
+    justify-items: center;
+    color: #fbf9f9;
+    margin-top: -5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 9px;
+    border: #0a84fd solid 1px;
+    background-color: rgba(196, 47, 255, 0.21);
+    transition: background-color 0.8s ease;
+}
+
+.footer .home-link:hover {
+    background-color: rgba(131, 10, 123, 0.38);
+}
+
+
+.sociaal {
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 1rem;
+    border-radius: 8rem;
+    margin-left: 1rem;
+}
+.sociaal img {
+    width: 25px;
+    height: 25px;
+}
+button {
+    width: 100px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: solid 1px cadetblue;
+    color: #024ff3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgba(251, 23, 232, 0.38);
+    color: #ffffff;
+}
+@media(min-width: 782px) {
+    .collapse-button {
+        display: none;
+    }
+        .menuheader {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            right: 1rem;
+            margin: 1rem 8rem 0 -2rem;
+            background-color: transparent;
+            position: absolute;
+            border: none;
+            width: 8rem;
+            height: 2rem;
+            text-wrap: nowrap;
+            box-shadow: none;
+        }
+
+        .items {
+            display: flex;
+            align-self: start;
+            justify-content: left;
+            gap: 1.5rem;
+            background-color: transparent;
+            position: static;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            color: #000;
+            
+        }
+    .items a {
+
+        text-decoration: none;
+    }
+        .items :hover {
+            background-color: rgba(92, 116, 205, 0.75);
+            color: #777554;
+        }
+    }
+
+body {
+    background-image: url("../img/ii.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    font-family:Cambria, serif;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Star style */
+.star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 215, 0, 0.6));
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7);
+    animation: starAnimation 1.5s infinite alternate;
+    pointer-events: none;
+}
+
+/* Randomly change colors of stars */
+@keyframes starAnimation {
+    0% {
+        transform: scale(0.8) translateY(0);
+        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.7); /* Yellow-red glow */
+        background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 0, 0, 0.6));
+    }
+    25% {
+        transform: scale(1) translateY(-10px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 15px rgba(0, 0, 255, 0.7);
+        background: radial-gradient(circle, rgba(0, 255, 255, 0.8), rgba(0, 0, 255, 0.6));
+    }
+    50% {
+        transform: scale(1.2) translateY(-15px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(85, 255, 0, 0.8), 0 0 15px rgba(255, 140, 0, 0.6); /* Orange-red glow */
+        background: radial-gradient(circle, rgba(123, 255, 0, 0.8), rgba(64, 255, 0, 0.6));
+    }
+    75% {
+        transform: scale(1) translateY(-10px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 15px rgba(128, 0, 128, 0.7);
+        background: radial-gradient(circle, rgba(255, 0, 255, 0.8), rgba(128, 0, 128, 0.6));
+    }
+    100% {
+        transform: scale(0.8) translateY(0);
+        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.7);
+        background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 69, 0, 0.6));
+    }
+}
+
+/* Algemene stijlen voor het contactformulier */
+.container {
+    width: 70%;
+    max-width: 620px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(250, 8, 220, 0.19);
+    box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
+    border-radius: 18px;
+    border: 1px solid #0c0a0a;
+}
+.container h2 {
+    text-align: center;
+    margin: 0;
+    color: #131313;
+    margin-bottom: 1rem;
+    font-family: Cambria, serif;
+    font-size: 2.5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 20px;
+
+}
+
+.contact h3, .contact h4, .contact h5 {
+    margin: 0;
+    color: #0c0c0c;
+    font-family: Cambria, serif;
+    font-size: 1.5rem;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #0e0e0d;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    font-family: Cambria, serif;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    background-color: rgb(251, 249, 249);
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #3f72a5;
+    outline: none;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact .submit {
+    width: 100%;
+    padding: 1rem;
+    background-color: #097ff6;
+    border: black solid 1px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-family: Cambria, serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact .submit:hover {
+    background-color: rgba(251, 2, 219, 0.33);
+}
+
+/*cv download-link $ location*/
+#download-cv {
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#download-cv a {
+    text-decoration: none;
+    color: #0e0e0d;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.map-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.download-link, .nav-link {
+    display: inline-block;
+    color: #0e0e0d;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: #e302f3 solid 1px;
+    background-color: #0a84fd;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.download-link:hover, .nav-link:hover {
+      background-color: rgba(253, 7, 241, 0.42);
+  }
+
+/* Over Mij Pagina Stijlen */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+}
+
+.left-div {
+    width: 55%;
+    padding: 20px;
+    height: 55%;
+
+}
+
+.right-div {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    height: 40%;
+}
+
+.right-div img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(244, 6, 196);
+    margin-top: -6rem;
+}
+
+.tab-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(244, 6, 232, 0.33);
+    color: #0c0c0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Cambria, serif;
+    box-shadow: 0 4px 8px rgba(246, 6, 190, 0.6);
+
+}
+
+.tab-button:hover {
+    background-color: rgba(10, 125, 228, 0.63);
+}
+
+.description-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #ece1e1;
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    max-width: 600px;
+    height: 40%;
+    max-height: 700px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgb(13, 86, 99);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 49px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.description-text {
+    display: none;
+
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    animation: slideIn 1.5s ease-out;
+}
+.naam{
+    color: #0e0e0d;
+    font-size: 2.1rem;
+    font-family: Cambria, serif;
+   margin: 0 auto;
+
+}
+
+.container2{
+    width: 50%;
+    height:50%;
+    margin: 0 auto;
+
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+.containerproject {
+    width: 90%;
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(250, 8, 220, 0.19);
+    box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
+    border-radius: 18px;
+    border: 1px solid #0c0a0a;
+}
+.containerproject h2 {
+    text-align: center;
+    margin: 0;
+    color: #131313;
+    margin-bottom: 1rem;
+    font-family: Cambria, serif;
+    font-size: 2.5rem;
+}
+.project-buttons,
+.project-info-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project-button,
+.project-info-button {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #3f72a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.project-button:hover,
+.project-info-button:hover {
+    background-color: #2e567a;
+    transform: scale(1.1);
+}
+
+.project-display {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+}
+
+.project-content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    display: none;
+}
+
+
+.project-buttons,
+.project-info-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.project-button,
+.project-info-button {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: rgba(223, 5, 205, 0.37);
+    color: white;
+    border: black solid 1px;
+    box-shadow: 3px 3px #4444ed;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.project-button:hover,
+.project-info-button:hover {
+    background-color: rgba(18, 30, 251, 0.55);
+}
+
+.project-display {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(108, 102, 102, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    display: none;
+}
+
+.project-content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    display: none;
+}
+
+
+
+/* Homepagina Stijlen */
+
+.containerr {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-family: Cambria, serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+
+.intro-text {
+    margin: 20px 0;
+    font-size: 1.3rem;
+    font-family: Cambria, serif;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-family: Cambria, serif;
+}
+
+.intro-text ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: Cambria, serif
+}
+
+.intro-text ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.intro-text ul li::before {
+    content: '•';
+    color: #0c3af6;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.intro-text strong {
+    color: #2202f3;
+    font-weight: bold;
+}
+
+.intro-image {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px rgba(4, 62, 251, 0.6);
+}
+
+.message-success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    font-size: 1.1rem; /* Slightly larger text */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    text-align: center; /* Center the text */
+    margin: 20px auto; /* Add space around the message */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit max width */
+}
+
+.message-success strong {
+    font-weight: bold; /* Make the message bold */
+}
+
+
+@media (max-width: 768px) {
+
+    #text-container{
+        align-self: center;
+        margin-top: -2rem;
+        color: rgba(87, 39, 136, 0.93);
+        font-size: 1rem;
+        font-family: Cambria, serif;
+    }
+    .logo {
+        width: 120px;
+        height: 120px;
+        margin-top: -1.5rem;
+        margin-left: -1.3rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+    .container {
+        width: 70%;
+        max-width: 620px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(250, 8, 220, 0.19);
+        box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
+        border-radius: 18px;
+        border: 1px solid #0c0a0a;
+    }
+
+    .contact h3, .contact h4, .contact h5 {
+        font-size: 1rem;
+    }
+
+    .contact input, .contact textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact .submit {
+        font-size: 1rem;
+    }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 1.5rem;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);
+            color: #f0f0f0;
+            padding: 0.5rem 0;
+            font-size: 0.5rem;
+        }
+
+
+
+    .footer .home-link {
+        display: inline-block;
+        color: #fbf9f9;
+        margin-top: -5px;
+        text-decoration: none;
+        font-size: 0.7rem;
+        padding: 10px 15px;
+        border-radius: 9px;
+        border: #0a84fd solid 1px;
+        background-color: rgba(196, 47, 255, 0.21);
+        transition: background-color 0.8s ease;
+    }
+
+
+    .footer .sociaal {
+        display: flex;
+        gap: 0.3rem;
+        margin-top: 1px;
+    }
+
+    .footer .sociaal img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    border-radius: 3rem;
+    }
+    .footer p {
+    font-size: 10px;
+    margin: 0 0.3rem;
+    color: #0c0a0a;
+    font-family: Cambria, serif;
+    }
+
+     .collapse-button {
+        position: fixed;
+        top: 0.8rem;
+        right: 1rem;
+        background-color: rgba(251, 249, 249, 0.5);
+        color: #0f3efb;
+        font-size: 15px;
+        padding: 10px 12px;
+        border: cadetblue solid;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 29px;
+        transition: background-color 0.3s ease;;
+        width: 3rem;
+    }
+    .items {
+        display: none;
+        background-color: rgba(48, 42, 42, 0.75);
+        position: fixed;
+        top: 60px;
+        right: 12px;
+        border: 1px solid rgba(221, 221, 221, 0.6);
+        border-radius: 8px;
+        width: 200px;
+        box-shadow: 0 8px 16px rgba(152, 144, 43, 0.27);
+        z-index: 99;
+        overflow: hidden;
+    }
+
+    .items a {
+        display: block;
+        padding: 13px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: rgb(251, 249, 249);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-weight: 500;
+    }
+
+
+    h1{
+        justify-items: center;
+        margin-top: 0.5rem;
+        font-size: x-large;
+        height: 2.5rem;
+        width: 10.5rem;
+
+    }
+
+
+    #download-cv {
+        margin-left: 0;
+        width: 92%;
+        margin-top: 20px;
+    }
+    #download-cv a {
+        text-decoration: none;
+        font-size: 1.5rem;
+
+    }
+  .map-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+
+  .download-link, .nav-link {
+    display: inline-block;
+    color: #0e0e0d;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: #e302f3 solid 1px;
+    background-color: #0a84fd;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+
+
+
+    .containerproject {
+        width: 70%;
+        max-width: 720px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(250, 8, 220, 0.19);
+        box-shadow: 4px 6px 6px rgba(7, 40, 250, 0.39);
+        border-radius: 18px;
+        border: 1px solid #0c0a0a;
+    }
+    .containerproject h2 {
+        text-align: center;
+        margin: 0;
+        color: #131313;
+        margin-bottom: 1rem;
+        font-family: Cambria, serif;
+        font-size: 1.5rem;
+    }
+    .project-buttons,
+    .project-info-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .project-button,
+    .project-info-button {
+        flex: 1;
+        margin: 0 10px;
+        padding: 10px;
+        background-color: #3f72a5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+        text-wrap: wrap;
+        transition: transform 0.4s ease;
+    }
+    /* Over Mij Pagina Stijlen */
+        .about-section {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-div, .right-div {
+            width: 90%;
+            height: auto;
+            padding: 15px;
+        }
+
+        .right-div img {
+            height: auto;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        .tab-button {
+            font-size: 1.5rem;
+            padding: 12px;
+        }
+
+        .popup-content {
+            width: 80%;
+            height: auto;
+        }
+
+        .naam {
+            font-size: 1.8rem;
+        }
+
+        .container2 {
+            width: 90%;
+            height: auto;
+        }
+
+}
+
+
+
