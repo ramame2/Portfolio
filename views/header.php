@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <a href= "../index.php"> <img src="../img/logo.png" alt="My Logo"  class="logo"></a>
+    <a href= "../"> <img src="../img/logo.png" alt="My Logo"  class="logo"></a>
     <div id="text-container"></div>
     <script src="../js/fav.js"></script>
     <div class="menuheader">

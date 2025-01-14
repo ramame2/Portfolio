@@ -10,9 +10,9 @@
 
         <?php if (basename($_SERVER['SCRIPT_NAME']) !== 'index.php'): ?>
         <div>
-            <p><a href="../index.php" class="home-link">Home</a></p>
+            <p><a href="/" class="home-link">Home</a></p>
         </div>
     <?php endif; ?>
-    <p>&copy; 2025 Rama Mari</p>
+        <a href="../views/admin.php">   <p>© 2025 Rama Mari</p></a>
     </div>
 </footer>
