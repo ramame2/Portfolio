@@ -1,5 +1,5 @@
 
-    // Function to create and animate colorful star flames behind the mouse
+
     document.addEventListener('mousemove', (e) => {
     const star = document.createElement('div');
     star.classList.add('star');
