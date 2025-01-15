@@ -39,7 +39,7 @@ global $conn;
             </div>
         </div>
         <div class="right-div">
-            <img src="../img/<?php echo ($MyPhotoContent); ?>" alt="Mijn Foto">
+            <img src="<?php echo ($MyPhotoContent); ?>" alt="Mijn Foto">
         </div>
     </div>
 

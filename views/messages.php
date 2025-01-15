@@ -13,13 +13,14 @@
     <?php else: ?>
         <?php foreach ($messages as $message): ?>
             <div class="message">
-                <h3><?php echo htmlspecialchars($message['naam']); ?></h3>
-                <p>Email: <?php echo htmlspecialchars($message['email']); ?></p>
+                <h3>Van: <?php echo htmlspecialchars($message['naam']); ?></h3>
+                <p>E-mail: <?php echo htmlspecialchars($message['email']); ?></p>
                 <p>Message: <?php echo htmlspecialchars($message['boodschap']); ?></p>
-                <p>Submitted on: <?php echo htmlspecialchars($message['verzonden_op']); ?></p>
+                <p>Datum: <?php echo htmlspecialchars($message['verzonden_op']); ?></p>
             </div>
         <?php endforeach; ?>
     <?php endif; ?>
 </div>
+<br><br>
 </body>
 </html>

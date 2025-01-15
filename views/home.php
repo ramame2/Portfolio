@@ -43,7 +43,7 @@ global $conn;
 
     <!-- Introductie afbeelding -->
     <div class="intro-image">
-        <img src="../img/<?php echo ($HomePicContent); ?>" alt="Intro Image">
+        <img src="<?php echo ($HomePicContent); ?>" alt="Intro Image">
     </div>
 
     <!-- Dynamische sectieslijst -->
