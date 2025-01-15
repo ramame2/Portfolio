@@ -1,5 +1,5 @@
 <?php
-require_once '../models/Project.php'; // Ensure only required dependencies are imported
+require_once '../models/Project.php';
 
 class ProjectController {
     private $db;
@@ -26,7 +26,7 @@ class ProjectController {
         $project->link = $link;
 
         if ($project->create()) {
-            return "Project added successfully.";
+            return "";
         } else {
             return "Unable to add project.";
         }
@@ -36,7 +36,7 @@ class ProjectController {
         $project = new Project($this->db);
 
         if ($project->delete($id)) {
-            return "Project removed successfully.";
+            return "";
         } else {
             return "Unable to remove project.";
         }
@@ -51,7 +51,7 @@ class ProjectController {
         $project->link = $link;
 
         if ($project->update()) {
-            return "Project updated successfully.";
+            return "";
         } else {
             return "Unable to update project.";
         }

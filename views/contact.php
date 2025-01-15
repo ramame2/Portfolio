@@ -12,8 +12,7 @@
 <?php
 require_once '../config/db_config.php';
 require_once '../controllers/ContactController.php';
-
-if (isset($conn)) {
+global $conn;
     $contactController = new ContactController($conn);
 
     $action = $_GET['action'] ?? '';
@@ -24,9 +23,7 @@ if (isset($conn)) {
             $boodschap = $_POST['boodschap'];
             echo $contactController->submitContactForm($naam, $email, $boodschap);
             break;
-    }
-} else {
-    echo "Database connection not initialized.";
+
 }
 
 $successMessage = "";

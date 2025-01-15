@@ -12,6 +12,19 @@ $cvController = new CVController($conn);
 $projectController = new ProjectController($conn);
 $pageContentController = new PageContentController($conn);
 
+$successMessage = "";
+$errorMessage = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $successMessage = "Succesvol bijgewerkt. Terug naar <a href='../views/admin.php'>Admin paneel</a> of naar <a href='../views/admin.php'>Home</a>.";
+
+}
+if ($successMessage): ?>
+    <div class="message-success">
+        <?php echo $successMessage; ?>
+    </div>
+<?php endif;
 $page = $_GET['page'] ?? '';
 $section = $_GET['section'] ?? '';
 

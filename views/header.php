@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <a href= "../"> <img src="../img/logo.png" alt="My Logo"  class="logo"></a>
+<div>
+    <a href="../">
+    <img src="../img/logo.png" alt="My Logo" class="logo">
+    </a>
+</div>
     <div id="text-container"></div>
-    <script src="../js/fav.js"></script>
     <div class="menuheader">
         <div class="items" id="menuItems">
             <a class="projecten2" href="../views/projecten.php" target="_self">📚 Projecten</a>
@@ -18,5 +21,5 @@
         </div>
         <button class="collapse-button" onclick="toggleMenu()">☰</button>
     </div>
-
+    <script src="../js/fav.js"></script>
 </body>

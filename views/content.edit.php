@@ -6,7 +6,6 @@ $pageContentController = new PageContentController($conn);
 
 $section = $_GET['section'] ?? '';
 
-// Handle content update if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['section'])) {
     $section = $_POST['section'];
     $newContent = $_POST['content'];
@@ -14,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['section'])) {
     echo "<p>" . htmlspecialchars($updateResult) . "</p>";
 }
 
-// Fetch all sections and their content
 $pageContentData = $pageContentController->getAllPageContent();
 ?>
 
@@ -35,8 +33,20 @@ $pageContentData = $pageContentController->getAllPageContent();
 
     <?php
     $currentContent = $pageContentController->getPageContent($section);
-    ?>
 
+    $successMessage = "";
+    $errorMessage = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $successMessage = "Inhoud succesvol bijgewerkt. Terug naar <a href='../views/admin.php'>Admin paneel</a> of naar <a href='/'>Home</a>.";
+
+    }
+     if ($successMessage): ?>
+        <div class="message-success">
+            <?php echo $successMessage; ?>
+        </div>
+    <?php endif; ?>
     <form method="POST" class="contact">
         <textarea name="content" rows="10"><?php echo htmlspecialchars($currentContent); ?></textarea><br><br>
         <input type="hidden" name="section" value="<?php echo htmlspecialchars($section); ?>">

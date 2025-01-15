@@ -16,7 +16,7 @@ class CVController {
         $cv->filedata = file_get_contents($filedata);
 
         if ($cv->upload()) {
-            return "CV uploaded successfully.";
+            return "";
         } else {
             return "Unable to upload CV.";
         }

@@ -11,7 +11,8 @@ class PageContent {
         $this->db = $db;
     }
 
-    // Get content of a specific section
+
+
     public function getContent($section) {
         $query = "SELECT content FROM " . $this->table . " WHERE section = :section";
         $stmt = $this->db->prepare($query);
@@ -25,7 +26,8 @@ class PageContent {
         return null;
     }
 
-    // Update content of a specific section
+
+
     public function updateContent($section, $content) {
         $query = "UPDATE " . $this->table . " SET content = :content WHERE section = :section";
         $stmt = $this->db->prepare($query);
