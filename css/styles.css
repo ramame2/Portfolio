@@ -212,7 +212,6 @@ body {
     background-image: url("../img/ii.jpg");
     background-repeat: repeat;
     background-size: cover;
-    background: linear-gradient(to bottom, #87CEEB, #E0FFFF);
     margin: 0;
     font-family:Cambria, serif;
     display: flex;
