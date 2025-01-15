@@ -21,6 +21,8 @@ global $conn;
     $studiesContent = $pageContentController->getPageContent('studies');
     $workContent = $pageContentController->getPageContent('work');
     $hobbiesContent = $pageContentController->getPageContent('hobbies');
+    $MyPhotoContent = $pageContentController->getPageContent('MyPhoto');
+
 
 ?>
 
@@ -37,17 +39,17 @@ global $conn;
             </div>
         </div>
         <div class="right-div">
-            <img src="/img/f.jpg" alt="Mijn Foto">
+            <img src="../img/<?php echo ($MyPhotoContent); ?>" alt="Mijn Foto">
         </div>
     </div>
 
     <div class="description-popup" id="description-popup">
         <div class="popup-content">
             <span class="close-button" onclick="closeDescription()">&times;</span>
-            <div id="skills" class="description-text"><?php echo htmlspecialchars($skillsContent); ?></div>
-            <div id="studies" class="description-text"><?php echo htmlspecialchars($studiesContent); ?></div>
-            <div id="work" class="description-text"><?php echo htmlspecialchars($workContent); ?></div>
-            <div id="hobbies" class="description-text"><?php echo htmlspecialchars($hobbiesContent); ?></div>
+            <div id="skills" class="description-text"><?php echo ($skillsContent); ?></div>
+            <div id="studies" class="description-text"><?php echo ($studiesContent); ?></div>
+            <div id="work" class="description-text"><?php echo ($workContent); ?></div>
+            <div id="hobbies" class="description-text"><?php echo ($hobbiesContent); ?></div>
         </div>
     </div>
 </div>

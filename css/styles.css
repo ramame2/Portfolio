@@ -619,7 +619,7 @@ body {
 /* Homepagina Stijlen */
 
 .containerr {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     color: black;
@@ -633,6 +633,7 @@ body {
     margin: 20px 0;
     font-size: 1.3rem;
     font-family: Cambria, serif;
+
 }
 
 .intro-text p {
@@ -672,7 +673,9 @@ body {
 }
 
 .intro-image {
-    width: 100%;
+    width: 90%;
+    justify-self: center;
+    opacity: 0.8;
     margin: 20px 0;
 }
 
@@ -713,13 +716,12 @@ body {
     .logo {
         width: 120px;
         height: 120px;
-        margin-top: -1.5rem;
-        margin-left: -1.3rem;
+        margin-top: -1rem;
+        margin-left: -1.2rem;
         border-radius: 50%;
-        margin-bottom: 1rem;
     }
     .container {
-        width: 70%;
+        width: 80%;
         max-width: 620px;
         margin: 2rem auto;
         padding: 2rem;
@@ -791,7 +793,7 @@ body {
 
      .collapse-button {
         position: fixed;
-        top: 0.8rem;
+        top: 0.4rem;
         right: 1rem;
         background-color: rgba(251, 249, 249, 0.5);
         color: #0f3efb;

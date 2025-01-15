@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbb576f6-e009-44b5-9fc0-880bdc856aec" name="Changes" comment="Mijn Portfolio">
+    <list default="true" id="5be1c135-ac53-4ce7-8c43-fe0aad336800" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/CVController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CVController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/PageContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/PageContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/PageContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/PageContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/content.edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/content.edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,9 @@
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +50,7 @@
   "customColor": "",
   "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="2rdndJn225enMFmdm10vox2rOOv" />
+  <component name="ProjectId" id="2rfWFe8uDu4ZoTqIUOgqxLoxU2q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,19 +61,12 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/portfolio/Deploy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "web.server",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -85,45 +80,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dbb576f6-e009-44b5-9fc0-880bdc856aec" name="Changes" comment="" />
-      <created>1736897907450</created>
+      <changelist id="5be1c135-ac53-4ce7-8c43-fe0aad336800" name="Changes" comment="" />
+      <created>1736950509671</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1736897907450</updated>
-      <workItem from="1736897909662" duration="7196000" />
+      <updated>1736950509671</updated>
+      <workItem from="1736950511363" duration="12176000" />
     </task>
-    <task id="LOCAL-00001" summary="Mijn Portfolio">
-      <option name="closed" value="true" />
-      <created>1736898790465</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1736898790465</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Mijn Portfolio">
-      <option name="closed" value="true" />
-      <created>1736928039039</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1736928039039</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Mijn Portfolio">
-      <option name="closed" value="true" />
-      <created>1736942640833</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1736942640835</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Mijn Portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mijn Portfolio" />
   </component>
 </project>

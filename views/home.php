@@ -23,13 +23,14 @@ global $conn;
     $overContent = $pageContentController->getPageContent('over');
     $homecontactContent = $pageContentController->getPageContent('homecontact');
     $homeprojectenContent = $pageContentController->getPageContent('homeprojecten');
+    $HomePicContent = $pageContentController->getPageContent('HomePic');
 
 ?>
 
 <div class="containerr">
 
     <div class="search-form">
-        <form action="search.php" method="GET">
+        <form action="../views/search.php" method="GET">
             <input type="text" name="query" placeholder="Zoek naar secties..." required>
             <button type="submit">Zoeken</button>
         </form>
@@ -42,7 +43,7 @@ global $conn;
 
     <!-- Introductie afbeelding -->
     <div class="intro-image">
-        <img src="../img/im.webp" alt="Intro Image">
+        <img src="../img/<?php echo ($HomePicContent); ?>" alt="Intro Image">
     </div>
 
     <!-- Dynamische sectieslijst -->
